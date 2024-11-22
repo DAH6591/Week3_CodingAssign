@@ -1,0 +1,14 @@
+{
+  "name": "week3_codingassign",
+  "version": "1.0.0",
+  "description": "\"# Week3_CodingAssign\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}

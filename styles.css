@@ -1,0 +1,102 @@
+
+/* styling for body of Home and Contact pages */
+body {
+    background-color: rgb(213, 204, 204);
+    padding: 12px;
+}
+
+/* Styling for navbar list - Home page link */
+li.nav-item-home>a {
+    color: maroon !important;
+    font-weight: 500;
+    font-size: larger;
+}
+
+/* Styling for navbar list - Contact page link */
+li.nav-item>a {
+    color: maroon !important;
+    font-weight: 450;
+    font-size: larger;
+}
+
+/* Styling for navbar dropdown menu items */
+.dropdown-item {
+    color: maroon !important;
+}
+
+/* styling for navbar, Search form placeholder of input class */
+input::placeholder {
+    color: maroon !important;
+}
+
+/* Styling for navbar, "Go" button at the end */
+.bg-slate {
+    background-color: #4F5D61;
+}
+
+/* styling for Home and Contact page heading image, #1 container-fluid divs */
+.bg-heading {
+    background-image: url(hockey-wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    color: rgb(105, 117, 128);
+    text-align: center;
+}
+
+/* Styling for Home page table header of bootstrap responsive table */
+tr.tbl-header-color>th {
+    color: maroon;
+    font-weight: 500;
+    font-size: larger;
+}
+
+/* Styling for Home page table body data of bootstrap responsive table  */
+tr.tbl-data-color>td {
+    color: maroon;
+    font-weight: 450;
+    font-size: medium;
+}
+
+/* Styling for Home page table body data links of bootstrap responsive table */
+tr.tbl-data-color a {
+    color: rgb(33, 33, 110);
+    font-weight: medium;
+    text-decoration: none;
+}
+
+/* Style for Home and Contact pages, h4 and h5 headers */
+#h4,
+#h5 {
+    color: maroon;
+}
+
+/* Styling for Home page bootstrap accordion-button section headers */
+#acc-color {
+    background-color: rgba(130, 126, 126, .90);
+    color: maroon;
+    font-weight: 500;
+}
+
+/* Styling for Home page bootstrap accordion-item text under each section */
+#acc-item {
+    color: maroon;
+}
+
+/* SVG styling for Home page bootstrap accordion icon (up-down arrow) */
+.accordion-button:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23641e16'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+/* Styling for Contact page bootstrap contact form in #2 container-fluid div */
+#contact-border {
+    border-radius:7px;
+    border: 1px solid maroon;
+}
+
+/* Styling for Contact page image in #2 container-fluid div  */
+.hockey-img {
+    border-radius:7px;
+    border: 1px solid maroon;
+}
+

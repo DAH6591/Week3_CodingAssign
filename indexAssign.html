@@ -1,0 +1,184 @@
+<!--Create a new website using HTML and Bootstrap. 
+The website must include the following:
+At least 2 pages.
+A Bootstrap navbar, table, and form.
+Bootstrap grid used throughout to format elements
+Elements should stack vertically when the window is small  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<!--SECTION begin body-->
+
+<body>
+  <!--SECTION begin navbar-->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-secondary bg-opacity-75 rounded pt-1 pb-1">
+    <div class="container-fluid">
+      <a class="navbar-brand ps-0.75"> <img src="download.jfif" alt="" width="45" height="45"
+          class="d-inline-block align-text-center" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item-home">
+            <a class="nav-link active" aria-current="page" href="indexAssign.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ContactAssign.html">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sites of Interest
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://www.usahockey.com/" target="_blank">USA Hockey</a></li>
+              <li><a class="dropdown-item" href="https://wachhockey.sportngin.com/" target="_blank">Women's Association
+                  of Colorado Hockey</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item"
+                  href="https://www.thecanadianencyclopedia.ca/en/article/origins-of-ice-hockey" target="_blank">Origins
+                  of Ice Hockey</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn bg-slate text-light" type="submit">Go</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar -->
+
+  <!--SECTION begin #1 container-fluid div. Includes image with header text. Includes one row that has one column. Image extends across page.-->
+  <div class="container-fluid pt-2">
+    <div class="row">
+      <div class="col bg-heading rounded">
+        <h4 class="ps-4 pt-1" id="h4">Welcome to My Hockey Site!</h4>
+      </div>
+    </div>
+  </div>
+  <!--end of #1 container-fluid div-->
+
+  <!--SECTION begin #2 container-fluid div. Includes one row with two columns. First column has a table; second column has an accordion-->
+  <div class="container-fluid pt-2">
+    <div class="row">
+      <!--begin first column-->
+      <div class="col-6 pt-1 ps-1">
+        <h5 id="h5" class="text-center">Favorite Hockey Leagues</h5>
+        <!--begin bootstrap responsive table-->
+        <div class="table-responsive table-bordered rounded pe-1">
+          <table class="table table-secondary table-striped table-hover">
+            <thead>
+              <tr class="tbl-header-color">
+                <th>League Name</th>
+                <th>Website</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr class="tbl-data-color">
+                <td>Professional Women's Hockey League</td>
+                <td><a href="https://www.thepwhl.com/en/" target="_blank">PWHL</a></td>
+              </tr>
+              <tr class="tbl-data-color">
+                <td>Colorado Avalanche</td>
+                <td><a href="https://www.nhl.com/avalanche/" target="_blank">CO Avalanche</a></td>
+              </tr>
+              <tr class="tbl-data-color">
+                <td>DU Pioneers</td>
+                <td><a href="https://denverpioneers.com/sports/mens-ice-hockey" target="_blank">DU Pioneers</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--end bootstrap responsive table-->
+      </div>
+      <!--end of first column-->
+
+      <!--begin second column-->
+      <div id="content" class="col-6 ps-1 pe-0">
+        <!--begin of bootstrap accordion-->
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item" id="acc-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" id="acc-color" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                About Me
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                My nickname is Dora and I'm from the baby boomer generation. I'm retired but hope to be working
+                part-time in the future. I have an active lifestyle that includes hiking, running, biking and ice
+                skating. I played ice hockey for about 15 years as an adult. I'm a big fan of professional and college
+                hockey (Go Avs, Go PWHL, Go Pios!) I love being in the mountains; when I'm in my favorite mountain
+                areas, I feel my best and experience a lot of joy and happiness.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" id="acc-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" id="acc-color" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                My Hockey Life
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                About 20 years ago, a few good friends of mine started playing adult, recreational ice hockey. I
+                watched
+                some games and caught the bug. After the 1998 Olympics in Nagano, girl's and women's hockey grew
+                exponentially in the U.S. A fledgling women's league was formed in my area that focused on women of
+                all
+                ages who wanted to learn to skate and play the game. I joined up. After a year of learning and
+                practicing skills, the league began real games. I never looked back! Since then I played in several
+                leagues for about 15 years (both women's and coed leagues). My teammates and I played in tournaments
+                around the state, around the country, in Canada and in Iceland! I even coached little kids for a few
+                years. Ice hockey changed my life. Lifelong friendships were formed. It was the greatest of times!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" id="acc-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" id="acc-color" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Future Plans and Goals
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                In the past several years I experienced some tough life circumstances. My health has not been the
+                best.
+                I'm currently trying to get back to a good state of health and am working hard at improving my fitness
+                level. I want to (and need to) work part-time, hopefully remotely at a job that I truly enjoy. Other
+                plans include playing ice hockey again and improving my running and endurance activities. Goals
+                include
+                participating in running races from 5K to marathon distance.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end bootstrap accordion-->
+      </div>
+      <!--end of second column-->
+    </div>
+  </div>
+  <!--end of #2 container-fluid div-->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+<!--end body-->
+
+</html>

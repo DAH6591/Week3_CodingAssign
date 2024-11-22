@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<!--SECTION begin body-->
+
+<body>
+    <!--SECTION begin navbar-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-secondary bg-opacity-75 rounded pt-1 pb-1">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-0.75"> <img src="download.jfif" alt="" width="45" height="45"
+                    class="d-inline-block align-text-center" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item-home">
+                        <a class="nav-link active" aria-current="page" href="indexAssign.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ContactAssign.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Sites of Interest
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.usahockey.com/" target="_blank">USA
+                                    Hockey</a></li>
+                            <li><a class="dropdown-item" href="https://wachhockey.sportngin.com/"
+                                    target="_blank">Women's Association
+                                    of Colorado Hockey</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://www.thecanadianencyclopedia.ca/en/article/origins-of-ice-hockey"
+                                    target="_blank">Origins
+                                    of Ice Hockey</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn bg-slate text-light" type="submit">Go</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--end navbar-->
+
+    <!--SECTION begin #1 container-fluid div. Includes a row that has one column that extends across the page-->
+    <div class="container-fluid pt-2">
+        <div class="row">
+            <div class="col bg-heading rounded">
+                <h4 class="ps-4 pt-1" id="h4">Let's Connect!</h4>
+            </div>
+        </div>
+    </div>
+    <!--end #1 container-fluid div.-->
+
+    <!--SECTION begin #2 container-fluid div. Includes one row that has two columns, arranged evenly across the page.-->
+    <div class="container-fluid pt-3">
+        <div class="row">
+            <!--begin first column that has a contact form with header text.-->
+            <div class="col-6 pt-1 ps-2" id="contact-border">
+                <h5 id="h5" class="text-center"> Contact</h5>
+                <form>
+                    <div class="mb-3 row">
+                        <div class="col-sm-6">
+                            <label for="exampleInputPassword1" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="exampleInputPassword1" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col-sm-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me if you love hockey</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <!--end first column that has contact form and header text-->
+
+            <!--begin second column that has an image with header text under the image-->
+            <div class="col-6 ">
+                <img class="mx-auto d-block hockey-img" height="300px" width="200px" src="Doreen_hockey.jpg">
+                <h5 id="h5" class="text-center">yours truly...</h5>
+            </div>
+            <!--end second column with image and header text-->
+        </div>
+        <!--end row of #2 container-fluid div-->
+    </div>
+    <!--end #2 container-fluid div-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+<!--end of body-->
+
+</html>
